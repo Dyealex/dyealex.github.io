@@ -1,28 +1,24 @@
 /* ironman aar */
 /* this is not the way I had it set up originally. Having trouble with the different size monitors and setting it up to run on all monitors */
- @media (min-width: 600px) {
-    @media (max-width: 1200px) {
- 
+@media (min-width: 600px) {
+@media (max-width: 1200px) {
 }
- } 
-
-
-   
+} 
 
 @media (min-width: 600px) {
 @media (max-width: 1200px) {
     #headerPic {
         
     height: 300px; 
-    } 
+} 
 }
 }
 
 
 @media (max-width: 1200px) {
-    @media (min-width: 600px) {
+@media (min-width: 600px) {
  #canI {
-    display: flex-box;
+    /* display: flex; */
     margin-top: 100px;
     /* width: 1200px; */
     margin-left: 100%; 
@@ -53,21 +49,27 @@ font-size: 50px;
     margin-left: 10%;
     /* margin-right: 50%; */
 }
-
-
-
-
-
-
 #theChoice {
     margin-top: -1000px;
 }
 .divPosition {
+    /* display: flex; */
     margin-top: 20px;
     /* margin-top: -100%; */
     margin-left: 25px;
-    /* max-width: ; */
+    max-width: 1200px; 
     /* font-family: 'Rock Salt', cursive; */
-    max-width: 1200px;
+    /* max-width: 1200px; */
 
+}
+#marylandPics { 
+    display: inline-flex;
+    margin-left: -10px;
+
+    /* flex-direction: column; */
+}
+#picsOfmaryland {
+    display: flex;
+    margin-inline-start: 10px;
+    /* margin-top: -20px; */
 }
