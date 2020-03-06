@@ -41,7 +41,7 @@
     opacity: .37;
     z-index: -1;
 } */ 
-        #video {
+        /* #video {
             display: flex;
             flex-wrap: wrap;
             border: 2px solid red;
@@ -51,7 +51,7 @@
             margin: 5px;
             padding: 5px;
             /* outline-width: 2px solid gray; */
-        }
+        /* } */ 
 
 
     #theChoice {
