@@ -1,0 +1,30 @@
+body {
+    width: 900px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+   /* opacity: .; */
+}
+.linkText {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -900px;
+    opacity: 1.5;
+}
+.cheatSheet1 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: -700px;    */
+}
+.cheatSheet2 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.catText{
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+}
