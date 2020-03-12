@@ -2,15 +2,60 @@
 /* font-family: 'Lemonada', cursive; */
 
 /* the main container of the page */
-@media (min-width:35em) {
-    @media (max-width:50em) {
+/* @media (min-width:600px) { */
+    /* @media (max-width:900px) { */
         #thePetsBody {
+            width: 900px;
             font-family: 'Lemonada' cursive;
-            display: flex;
-            flex-flow: column;
+            margin-left: auto;
+            margin-right: auto;
+            /* display: flex; */
+            /* flex-flow: column; */
 }
-}
-}
+/* } */
+/* } */
+a {
+    text-decoration: none;
+  }
+  
+  #btn1 {
+    top: 100px;
+  }
+  
+  #btn2 {
+    top: 200px;
+  }
+  
+  #btn3 {
+    top: 300px;
+  }
+  
+  div.button {
+    background-color: #8533ff;
+    color: #2c3e50;
+    border: none;
+    border-radius: 30px;
+    width: 500px;
+    height: 60px;
+    position: fixed;
+    left: -435px;
+    transition: .7s ease;
+  }
+  
+  div.button:hover {
+    background-color: #d699ff;
+    position: fixed;
+    left: -40px;
+    width: 480px;
+    border-radius: 0px;
+    box-shadow: 0px 5px 0px #7a00cc;
+  }
+  
+  div.button:active {
+    background-color: #2c3e50;
+    transition: 0s;
+    color: #ecf0f1;
+  }
 /* class for all photos */
 .petPhoto {
     width: 400px;
@@ -27,10 +72,10 @@
 
 }
 /* header start position */
-.headPos {
+/* .headPos { */
 
     /* margin-inline-start: -1em; */
-}
+/* } */
 
 /* scout div, photo and title */
 /* scout div */
