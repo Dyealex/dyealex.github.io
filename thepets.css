@@ -14,6 +14,16 @@
 }
 /* } */
 /* } */
+header {
+    background-color: lightcoral;
+    overflow: visible;
+}
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-top: -50px; */
+}
  /* Add a black background color to the top navigation */
  .topnav {
     background-color: #333;
@@ -44,8 +54,9 @@
 /*  */
 /* class for all photos */
 .petPhoto {
-    width: 400px;
-    height: 300px;
+    width:300px;
+    height: 200px;
+    transform: rotate(-10deg);
     border-radius: 10px;
     box-shadow: 5px 5px  #d147a3;   
 }
@@ -67,7 +78,7 @@
 /* scout div */
 #scout { 
 /* width: 50em; */
-margin-inline-start: 22em;
+margin-inline-start: 18em;
 margin-top: -200px;
 /* font-size: 20px; */
 } 
@@ -79,14 +90,14 @@ margin-top: -200px;
 /* div */
 #sweetie {
     
-    margin-inline-start: 22em;  
+    margin-inline-start: 18em;  
     margin-top: -8em;
     /* font-family: 'Lemonada' cursive; */
     /* display: flex; */
 }
 /* photo */
 #meanCat {
-    margin-top: 8rem;
+    margin-top: rem;
     /* margin-left: 10px; */
 }
 #sweetieHeader {
@@ -96,7 +107,7 @@ margin-top: -200px;
 /* div */
 #gus {
     /* width: 50em; */
-    margin-inline-start: 22em;  
+    margin-inline-start: 18em;  
     margin-top: -14em;  
 }
 
@@ -117,4 +128,11 @@ margin-top: -200px;
     transform: translateX(-231%); 
     transition-duration: 3s;
     opacity: 1;
+}
+#stewie {
+    margin-inline-start: 18em;  
+    margin-top:-10em;  
+}
+#stewMan {
+    margin-top: 7em;
 }
