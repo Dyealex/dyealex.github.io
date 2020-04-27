@@ -1,8 +1,9 @@
 #mainContainer {
-  width: 900px;
+  margin: 10px auto;
+  /* width: 900px;
   margin-left: auto;
   margin-right: auto;
-   
+    */
     
   }
   .img {
@@ -14,7 +15,7 @@
 
   #headStart {
     position: relative;
-    background-image: url(" images/glassandbrick.jpg");
+    /* background-image: url("images/glassandbrick.jpg"); */
     height: 300px;
     margin-top: auto;
   }
