@@ -1,0 +1,75 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+</head>
+<style>
+    #photoSection {
+        display: block;
+        width: 450px;
+        height: 600px;
+
+    }
+    [data-component = "slideshow"] .slide {
+        display: none;
+    }
+    [data-component = "slideshow"] .slide.active {
+        display: block;
+    }
+    #photoText {
+        position: relative;
+        font-size: 30px;
+    margin-left: 20px;
+    }
+    .photoParagraph {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <div id = "photoSection" data-component="slideshow">
+    <div role="list">
+        <div class="slide">
+           <p id = "photoText"> <img src="paintshed-bk.jpg" alt="black plate">Black plate</p>
+        </div>
+        <div role="list">
+            <div class="slide">
+                <p id = "photoText"><img src="paintshed-bkbl.jpg" alt="black and blue plates">Add some blue...</p>
+            </div>
+    <!-- <section id = "photoSection" class="bikePhoto"> -->
+        <div role="list">
+            <div class="slide">
+
+                <p id = "photoText"><img src="paintshed-bkblrd.jpg" alt="Adding red">A little red...</p>            </div>
+            <div role="list">
+                <div class="slide">      
+                    <p id = "photoText"><img src="paintshed-4color.jpg" alt="all colors">With the yellow, you have a 4 color process photo. </p>
+                </div>
+    <!-- </section> -->
+    <p class="photoParagraph">An example of how four color process printing works. <br>Four plates, four colors and you have a four color printing. The scanner changed the colors or at least added color where it "thought"
+it was needed. I don't or can't think of a way to get the pictures to the computer without using the scanner so this will have to do for now.</p>
+</div>
+        </div>
+    <script>
+var slideshows = document.querySelectorAll('[data-component = "slideshow"]') ;
+
+slideshows.forEach(initSlideShow);
+function initSlideShow (slideshow) {
+    var slides = document.querySelectorAll(`#${slideshow.id} [role = "list"] .slide`)
+    var index = 0, time = 3000;
+    slides[index].classList.add('active');
+    setInterval( () => {
+        slides[index].classList.remove("active");
+        index++
+        if (index === slides.length) index = 0
+        slides[index].classList.add("active");
+    }, time);
+}
+    </script>
+</body>
+</html>
